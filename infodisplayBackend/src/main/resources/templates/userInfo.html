@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="cn">
+<!-- Head -->
+<head>
+<title>${user.username} 的个人主页</title>
+<!-- css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- //Default-JavaScript-File -->
+
+</head>
+<body>
+<!-- banner -->
+	<div class="w3-banner-top">
+	<div class="agileinfo-dot">
+			<div class="w3layouts_menu">
+				<nav class="cd-stretchy-nav edit-content">
+					<a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
+					<ul>
+						<li><a href="#home" class="scroll"><span>Home</span></a></li>
+						<li><a href="#about" class="scroll"><span>About</span></a></li>
+						<li><a href="#experiences" class="scroll"><span>Experiences</span></a></li>
+						<li><a href="#skills" class="scroll"><span>Skills</span></a></li> 
+						<li><a href="#projects" class="scroll"><span>Projects</span></a></li>
+						<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+					</ul> 
+					<span aria-hidden="true" class="stretchy-nav-bg"></span>
+				</nav> 
+			</div>
+
+		<div class="w3-banner-grids">
+			<div class="col-md-6 w3-banner-grid-left">
+				<div class="w3-banner-img">
+					<img src="images/ban661.jpg" alt="img">
+					<h3 class="test">${user.username}</h3>
+				</div>
+			</div>
+			<div class="col-md-6 w3-banner-grid-right">
+			<div class="w3-banner-text">
+				<h3>个人信息</h3>
+				<p>${user.name}</p>
+			</div>
+				<div class=" w3-right-addres-1">
+				<ul class="address">
+								<li>
+									<ul class="agileits-address-text ">
+										<li class="agile-it-adress-left"><b>账户余额</b></li>
+										<li><span>:</span>${user.account}</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>联系电话</b></li>
+										<li><span>:</span>${user.phone}</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>年龄</b></li>
+										<li><span>:</span>${user.age}</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>性别</b></li>
+										<li><span>:</span>${user.sex}</li>
+									</ul>
+								</li>
+							</ul> 
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		</div>
+		<div class="thim-click-to-bottom">
+				<a href="#about" class="scroll">
+					<i class="fa  fa-chevron-down"></i>
+				</a>
+			</div>
+
+	</div>
+<!-- banner -->
+<!-- /about -->
+
+<div class="w3-about" id="about">
+	<div class="container">
+		<div class="w3-about-head">
+			<h3>关于我</h3>
+		</div>
+		<div class="w3-about-grids">
+		<div class=" w3-about-grids1">
+				<div class="col-md-6 w3-about-grid-left1">
+					<img src="images/ab5.jpg" alt="img1">
+		
+				</div>
+				<div class="col-md-6 w3-about-grid-right1">
+					<h3>愿你记住我</h3>
+
+				<div class="clearfix"></div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="w3-about-grids2">
+				<div class="col-md-6 w3-about-grid-left2">
+					<h3>个人介绍</h3>
+					<p> ${user.info}</p>
+					<h4><a href="#">首页</a></h4>
+		
+				</div>
+				<div class="col-md-6 w3-about-grid-right2">
+				<img src="images/ab7.jpg" alt="img1">
+		
+				</div>
+				<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- //about  -->
+
+
+
+<!-- //main-content -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images w3-pop1-img">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images">
+								<img src="images/gal11.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img2">
+							<img src="images/gal22.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images w3-pop1-img3">
+							<img src="images/gal33.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img4">
+							<img src="images/gal44.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img5">
+							<img src="images/gal66.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img6">
+								<img src="images/gal61.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img7">
+								<img src="images/gal77.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img8">
+								<img src="images/gal88.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img9">
+							<img src="images/gal99.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>				 					
+ <script src="js/jquery.filterizr.js"></script>
+    
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+
+<!-- footer -->
+	<div class="w3l_footer">
+		<div class="container">
+			
+			<div class="w3ls_footer_grids">
+				
+				<div class="w3ls_footer_grid">
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Location</h4>
+							<p>FZU</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Email</h4>
+							<a href="mailto:info@example.com">jnscz666@163.com</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Call Me</h4>
+							<p>${user.phone}</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="w3l_footer_pos">
+			<p>© 版权所有 | Design by 江南四才子</p>
+		</div>
+	</div>
+<!-- //footer -->
+<script src="js/bars.js"></script>
+<!-- start-smoth-scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- text-effect -->
+		<script type="text/javascript" src="js/jquery.transit.js"></script> 
+		<script type="text/javascript" src="js/jquery.textFx.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.test').textFx({
+						type: 'fadeIn',
+						iChar: 100,
+						iAnim: 1000
+					});
+			});
+		</script>
+<!-- //text-effect -->
+<!-- menu-js --> 	
+	<script src="js/modernizr.js"></script>	
+	<script src="js/menu.js"></script>
+<!-- //menu-js --> 	
+
+
+<script type="text/javascript" src="js/move-top.js"></script>
+
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+
+</body>
+</html>
