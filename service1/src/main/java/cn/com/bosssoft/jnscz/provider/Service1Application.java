@@ -1,0 +1,14 @@
+package cn.com.bosssoft.jnscz.provider;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+@EnableEurekaServer
+@SpringBootApplication
+public class Service1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Service1Application.class, args);
+	}
+}
